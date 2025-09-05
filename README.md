@@ -10,10 +10,6 @@ A responsive e-commerce product detail page for jewellery, built with React and 
 - Tailwind CSS
 - JavaScript
 
-## Live Demo
-
-[View Live Site](https://sahilg28.github.io/JewelleryPage_UI/)
-
 ## Development
 
 ```bash
@@ -21,8 +17,8 @@ npm install
 npm run dev
 ```
 
-## Deployment
+## Build
 
 ```bash
-npm run deploy
+npm run build
 ```
