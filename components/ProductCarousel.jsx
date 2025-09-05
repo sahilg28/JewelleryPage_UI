@@ -28,14 +28,11 @@ const ProductCarousel = ({ title, products }) => {
 
   return (
     <div className="w-full max-w-[1553px] mx-auto h-auto lg:h-[552px] flex flex-col items-center gap-5 lg:gap-10 px-4">
-      {/* Section Title */}
       <h2 className="w-full h-auto font-montserrat font-semibold text-[18px] lg:text-[42px] leading-[23px] lg:leading-[51px] text-center text-[#2D2D2D]">
         {title}
       </h2>
 
-      {/* Mobile: 2-Column Grid, Desktop: Carousel */}
       <div className="w-full h-auto lg:h-[461px] flex flex-col lg:flex-row justify-center items-center gap-2 lg:gap-[15px] overflow-hidden">
-        {/* Desktop: Left Arrow */}
         <button className="hidden lg:flex w-[58.28px] h-[58px] flex-col justify-center items-center p-3 gap-[10px] relative">
           <div className="absolute w-[58.28px] h-[58px] bg-[#F6F5F2] rounded-full"></div>
           <svg 
@@ -49,11 +46,9 @@ const ProductCarousel = ({ title, products }) => {
           </svg>
         </button>
 
-        {/* Product Cards */}
         <div className="w-full grid grid-cols-2 lg:flex lg:flex-row gap-2 lg:gap-[15px] lg:flex-1 lg:justify-center">
           {products.map((product, index) => (
             <div key={index} className="w-full lg:w-[312px] h-[287px] lg:h-[461px] relative bg-white lg:flex-shrink-0 group cursor-pointer transition-all duration-300 hover:shadow-lg hover:scale-105">
-              {/* Product Image */}
               <div className="w-full h-[196px] lg:h-[316px] relative overflow-hidden rounded">
                 <img 
                   src={product.image || "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=187&h=196&fit=crop&crop=center&auto=format&q=80"} 
@@ -63,7 +58,6 @@ const ProductCarousel = ({ title, products }) => {
                     e.target.src = "https://images.unsplash.com/photo-1594736797933-d0c29d0b8f22?w=187&h=196&fit=crop&crop=center&auto=format&q=80"
                   }}
                 />
-                {/* Hover Overlay */}
                 <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300 flex items-center justify-center">
                   <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform translate-y-2 group-hover:translate-y-0">
                     <button className="bg-white text-[#FF8F9D] px-3 py-1 lg:px-4 lg:py-2 rounded-full font-medium text-xs lg:text-sm shadow-lg hover:bg-[#FF8F9D] hover:text-white transition-colors duration-300">
@@ -72,14 +66,12 @@ const ProductCarousel = ({ title, products }) => {
                   </div>
                 </div>
                 
-                {/* Best Seller Tag */}
                 <div className="absolute top-[20px] lg:top-[32px] left-0 w-[84px] lg:w-[139.45px] h-[17px] lg:h-[27px] bg-[#A40303] rounded-r-[18px] flex flex-row justify-center items-center px-[9px] py-[3px] gap-[10px]">
                   <span className="w-auto h-auto font-montserrat font-medium text-[8px] lg:text-[16px] leading-[10px] lg:leading-[20px] text-white">
                     BestSeller
                   </span>
                 </div>
 
-                {/* Wishlist Icon */}
                 <button 
                   onClick={() => toggleWishlist(product.name)}
                   className="absolute top-[15px] lg:top-[25px] right-[15px] lg:right-[25px] w-[23px] lg:w-[40px] h-[23px] lg:h-[40px] bg-white rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110"
@@ -103,14 +95,11 @@ const ProductCarousel = ({ title, products }) => {
                 </button>
               </div>
 
-              {/* Product Details */}
               <div className="absolute w-full h-auto left-0 top-[204px] lg:top-[328px] flex flex-col items-start gap-[2px] lg:gap-[5px] px-2 lg:px-0">
-                {/* Product Name */}
                 <h3 className="w-full h-auto font-montserrat font-medium text-[10px] lg:text-[16px] leading-[12px] lg:leading-[20px] text-[#2D2D2D]">
                   {product.name}
                 </h3>
 
-                {/* Price */}
                 <div className="w-full h-auto flex flex-row items-center gap-[14px]">
                   <div className="w-auto h-auto relative">
                     <span className="w-auto h-auto font-montserrat font-semibold text-[16px] lg:text-[22px] leading-[20px] lg:leading-[27px] text-[#2D2D2D]">

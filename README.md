@@ -1,4 +1,4 @@
-# E-commerce Jewelry UI
+# E-commerce Jewellery UI
 
 A responsive e-commerce product detail page for jewellery, built with React and Tailwind CSS.
 

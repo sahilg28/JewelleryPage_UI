@@ -1,26 +1,19 @@
 const Footer = () => {
   return (
     <footer className="w-full h-auto lg:h-[640px] relative">
-      {/* Footer Background */}
       <div className="absolute w-full h-full lg:h-[640px] left-0 top-0 bg-[#D9D9D9]"></div>
       
-      {/* Footer Content */}
       <div className="relative w-full h-auto lg:h-[569px] left-0 top-0 lg:top-[71px]">
         <div className="w-full h-auto lg:h-[535px] left-0 top-0 lg:top-[34px]">
-          {/* Copyright Bar */}
           <div className="absolute w-full h-[43px] left-0 bottom-0 bg-[#CA8787] flex items-center px-6 lg:px-32">
             <p className="w-auto h-auto font-montserrat font-medium text-[14px] leading-[17px] text-white">
               © 2024 Elegant Jewels. All Rights Reserved.
             </p>
           </div>
 
-          {/* Mobile Footer Layout */}
           <div className="block lg:hidden w-full max-w-[430px] mx-auto h-[657px] bg-[#D9D9D9] relative">
-            {/* Main Footer Content */}
             <div className="w-full h-[614px] px-6 py-8 flex flex-col gap-8">
-              {/* Quick Links and Details Row */}
               <div className="w-full flex flex-row gap-6">
-                {/* Quick Links */}
                 <div className="w-1/2">
                   <h4 className="w-auto h-auto font-montserrat font-semibold text-[14px] leading-[17px] text-[#A40303] mb-4">
                     Quick Links
@@ -34,7 +27,6 @@ const Footer = () => {
                   </div>
                 </div>
 
-                {/* Details */}
                 <div className="w-1/2">
                   <h4 className="w-auto h-auto font-montserrat font-semibold text-[14px] leading-[17px] text-[#A40303] mb-4">
                     Details

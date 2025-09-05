@@ -47,7 +47,6 @@ const ProductDetails = () => {
         </div>
       </div>
 
-      {/* Mobile: Action Buttons - Below Price */}
       <div className="w-full h-auto flex flex-row items-center gap-[11px] lg:hidden">
         <button className="flex-1 h-[40px] border border-[#FF8F9D] shadow-[0px_6px_18px_rgba(255,60,84,0.14)] flex flex-row justify-center items-center px-4 gap-[10px] transition-all duration-300 hover:scale-105 hover:shadow-[0px_8px_25px_rgba(255,60,84,0.25)] hover:bg-[#FF8F9D] hover:text-white group">
           <span className="w-auto h-auto font-montserrat font-bold text-[14px] leading-[17px] text-[#FF8F9D] group-hover:text-white transition-colors duration-300">
@@ -61,11 +60,8 @@ const ProductDetails = () => {
         </button>
       </div>
 
-      {/* Features */}
       <div className="w-full h-auto flex flex-col items-start gap-3 lg:gap-5">
-        {/* Mobile: Single Column, Desktop: Two Rows */}
         <div className="w-full h-auto flex flex-col lg:flex-row items-start gap-3 lg:gap-[54px]">
-          {/* Easy 30 Day Return */}
           <div className="w-full lg:w-[257px] h-auto flex flex-row justify-start lg:justify-center items-center gap-[10px]">
             <div className="w-[34px] lg:w-[50px] h-[34px] lg:h-[50px] flex items-center justify-center">
               <img 
@@ -79,7 +75,6 @@ const ProductDetails = () => {
             </span>
           </div>
 
-          {/* 925 Silver Plating */}
           <div className="w-full lg:w-[235px] h-auto flex flex-row justify-start lg:justify-center items-center gap-[10px]">
             <div className="w-[34px] lg:w-[50px] h-[34px] lg:h-[50px] flex items-center justify-center">
               <img 
@@ -94,9 +89,7 @@ const ProductDetails = () => {
           </div>
         </div>
 
-        {/* Second Row */}
         <div className="w-full h-auto flex flex-col lg:flex-row items-start gap-3 lg:gap-[60px]">
-          {/* 6-Month Warranty */}
           <div className="w-full lg:w-[252px] h-auto flex flex-row justify-start lg:justify-center items-center gap-[10px]">
             <div className="w-[34px] lg:w-[50px] h-[34px] lg:h-[50px] flex items-center justify-center">
               <img 
@@ -110,7 +103,6 @@ const ProductDetails = () => {
             </span>
           </div>
 
-          {/* Premium Gold */}
           <div className="w-full lg:w-[209px] h-auto flex flex-row justify-start lg:justify-center items-center gap-[10px]">
             <div className="w-[34px] lg:w-[50px] h-[34px] lg:h-[50px] flex items-center justify-center">
               <img 
@@ -126,7 +118,6 @@ const ProductDetails = () => {
         </div>
       </div>
 
-      {/* Desktop: Action Buttons - After Features */}
       <div className="hidden lg:flex w-full h-auto flex-row items-center gap-[11px]">
         <button className="flex-1 h-[55px] border border-[#FF8F9D] shadow-[0px_6px_18px_rgba(255,60,84,0.14)] flex flex-row justify-center items-center px-8 gap-[10px] transition-all duration-300 hover:scale-105 hover:shadow-[0px_8px_25px_rgba(255,60,84,0.25)] hover:bg-[#FF8F9D] hover:text-white group">
           <span className="w-auto h-auto font-montserrat font-bold text-[18px] leading-[22px] text-[#FF8F9D] group-hover:text-white transition-colors duration-300">
@@ -140,7 +131,6 @@ const ProductDetails = () => {
         </button>
       </div>
 
-      {/* Delivery Time */}
       <div className="w-full h-auto flex flex-col items-start gap-3">
         <h3 className="w-full h-auto font-montserrat font-semibold text-[16px] lg:text-[20px] leading-[20px] lg:leading-[24px] text-[#2D2D2D]">
           Estimated Delivery Time
@@ -165,7 +155,6 @@ const ProductDetails = () => {
         </div>
       </div>
 
-      {/* Offers */}
       <div className="w-full h-auto flex flex-col items-start gap-3">
         <div className="w-full h-auto flex flex-row items-start justify-between">
           <div className="w-auto h-auto flex flex-col items-start gap-1">
@@ -187,10 +176,8 @@ const ProductDetails = () => {
         </div>
       </div>
 
-      {/* Divider */}
       <div className="w-full h-0 border border-[#FF8F9D]"></div>
 
-      {/* Product Description */}
       <div className="w-full h-auto flex flex-col justify-center items-start gap-3">
         <h3 className="w-full h-auto font-montserrat font-semibold text-[16px] lg:text-[20px] leading-[20px] lg:leading-[24px] text-black">
           Product Description
@@ -231,7 +218,6 @@ const ProductDetails = () => {
         </div>
       </div>
 
-      {/* Shipping */}
       <div className="w-full h-auto flex flex-col justify-center items-start gap-3">
         <h3 className="w-full h-auto font-montserrat font-semibold text-[16px] lg:text-[20px] leading-[20px] lg:leading-[24px] text-black">
           Shipping

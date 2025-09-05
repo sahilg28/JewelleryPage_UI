@@ -7,7 +7,6 @@ import ProductCarousel from '../components/ProductCarousel'
 import Footer from '../components/Footer'
 
 const LandingPage = () => {
-  // Sample product data for carousels
   const similarProducts = [
     {
       name: "Gold Pearl Drop Earrings",
@@ -82,18 +81,13 @@ const LandingPage = () => {
     <div className="min-h-screen bg-white">
       <Header />
       
-      {/* Breadcrumb Navigation */}
       <Breadcrumb />
       
-      {/* Main Product Detail Content */}
       <main className="w-full">
-        {/* Product Section */}
         <section className="w-full px-6 lg:px-32 py-6 lg:py-8">
           <div className="flex flex-col lg:flex-row items-start gap-6 lg:gap-8 max-w-7xl mx-auto">
-            {/* Left Column - Product Image Gallery */}
             <ProductImageGallery />
             
-            {/* Right Column - Product Details and Reviews */}
             <div className="flex flex-col gap-6 lg:gap-8 w-full lg:w-auto">
               <ProductDetails />
               <CustomerReviews />
@@ -101,23 +95,19 @@ const LandingPage = () => {
           </div>
         </section>
 
-        {/* Similar Products Section - Hidden on mobile */}
         <section className="hidden lg:block w-full py-8 lg:py-16">
           <ProductCarousel title="Similar to this" products={similarProducts} />
         </section>
 
-        {/* You Might also like Section - Mobile only */}
         <section className="block lg:hidden w-full py-8">
           <ProductCarousel title="You Might also like" products={similarProducts.slice(0, 4)} />
         </section>
 
-        {/* Top Picks Section - Desktop only */}
         <section className="hidden lg:block w-full py-8 lg:py-16">
           <ProductCarousel title="Top picks for you" products={topPicks} />
         </section>
       </main>
 
-      {/* Footer */}
       <Footer />
     </div>
   )

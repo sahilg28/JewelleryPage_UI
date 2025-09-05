@@ -47,7 +47,6 @@ const Header = () => {
 
   return (
     <header className="w-full">
-      {/* Offer Banner */}
       <div className="w-full h-[36px] lg:h-[43px] bg-[#CA8787] flex items-center justify-center px-4">
         <p className="text-white text-[14px] leading-[17px] font-medium font-montserrat text-center">
           <span className="lg:hidden">50% off on all items till 23 Sept</span>
@@ -57,12 +56,9 @@ const Header = () => {
         </p>
       </div>
 
-      {/* Main Header */}
       <div className="w-full h-[35px] lg:h-[85px] bg-[#FAF9F6] flex flex-col items-center px-6 lg:px-[126px] py-0 lg:py-[22px] gap-0 lg:gap-[10px] mt-2 lg:mt-0">
         <div className="w-full max-w-[1293px] h-[26px] lg:h-[40px] flex flex-row items-center justify-between lg:gap-[201px]">
-          {/* Mobile: Hamburger Menu + Logo */}
           <div className="flex items-center gap-6 lg:hidden">
-            {/* Hamburger Menu */}
             <button 
               className="w-[26px] h-[26px] flex items-center justify-center"
               onClick={handleMenuToggle}
@@ -73,13 +69,11 @@ const Header = () => {
                 <path d="M3 19.5H23" stroke="#2D2D2D" strokeWidth="1.5" strokeLinecap="round"/>
               </svg>
             </button>
-          {/* Logo */}
-            <h1 className="font-montserrat font-bold text-[18px] leading-[22px] text-[#2D2D2D]">
+                      <h1 className="font-montserrat font-bold text-[18px] leading-[22px] text-[#2D2D2D]">
               LOGO
             </h1>
           </div>
 
-          {/* Desktop: Logo */}
           <div className="hidden lg:flex flex-none order-0 flex-grow-0">
             <h1 className="w-[92px] h-[37px] font-montserrat font-bold text-[30px] leading-[37px] text-[#2D2D2D]">
               LOGO
