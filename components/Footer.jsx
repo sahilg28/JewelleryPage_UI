@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="w-full h-auto lg:h-[535px] left-0 top-0 lg:top-[34px]">
           <div className="absolute w-full h-[43px] left-0 bottom-0 bg-[#CA8787] flex items-center px-6 lg:px-32">
             <p className="w-auto h-auto font-montserrat font-medium text-[14px] leading-[17px] text-white">
-              © 2024 Elegant Jewels. All Rights Reserved.
+              © 2025 Elegant Jewels. All Rights Reserved.
             </p>
           </div>
 
@@ -95,7 +95,7 @@ const Footer = () => {
             {/* Copyright Bar */}
             <div className="w-full h-[43px] bg-[#CA8787] flex items-center justify-center">
               <p className="w-auto h-auto font-montserrat font-medium text-[14px] leading-[17px] text-white">
-                © 2024 Elegant Jewels. All Rights Reserved.
+                © 2025 Elegant Jewels. All Rights Reserved.
               </p>
             </div>
           </div>
